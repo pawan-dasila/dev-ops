@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Printing message
-        run: echo "This is a scheduled run \n it will run every Sunday at midnight"
+        run: echo "This is a scheduled run \n it will run every Sunday at midnight only"
 
 
   build:
