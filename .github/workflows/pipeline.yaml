@@ -8,6 +8,7 @@ on:
 
 jobs:
   run-script:
+    if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
     steps:
       - name: Printing message
@@ -15,6 +16,7 @@ jobs:
 
 
   build:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
